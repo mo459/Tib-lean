@@ -1,19 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Health-Tech Startup</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Tech Startup</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Your Health-Tech Startup</h1>
-        <p>Discover the future of health technology.</p>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.simplilearn.com%2Fimage-processing-article&psig=AOvVaw1zF5RuGEnyMPiP2e304Akl&ust=1690181234313000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJCFg_WdpIADFQAAAAAdAAAAABAIr-logo.png" alt="Your Startup Logo">
-        <p>Sign up for early access to our innovative health solutions.</p>
-        <button>Get Started</button>
+  <header>
+    <!-- Add the company logo and adjust its styles -->
+    <img src="https://firebasestorage.googleapis.com/v0/b/newproject-caf18.appspot.com/o/users%2F1p5M5AVsHbfh97OSTsJWBIsF0PZ2%2Fuploads%2F%D8%B7%D9%80%D9%90%D8%A8%D9%92%20-%20%D9%84%D9%90%D9%80%D9%80%D9%8A%D9%80%D9%86%20(1)%20(1).png?alt=media&token=8989df68-9767-4794-98bf-ee1b926092b7" alt="Company Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#Contact Us">Contact Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <h2>Discover The Future Of Health Care With Tib-Lean.</h2>
+      <p>Ready to improve patient outcomes and lower treatment costs? Schedule a demo now to see how TiB-Lean's innovative semi-telemedicine solutions can help. Book your demo today and join the future of healthcare!</p>
+      <a href="#signup" class="btn">Free Demo</a>
+    </section>
+
+    <section id="about">
+  <h2>About Us</h2>
+  <div class="image-container">
+    <div class="image-card">
+      <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg" alt="Image 1">
+      <div class="image-info">
+        <h3>Our Vision</h3>
+        <p>To provide affordable and accessible medical care services to all, regardless of socioeconomic status. By promoting better health outcomes for individuals and communities, we strive to create a healthier and happier world. Join us in our vision to make medical care accessible for everyone, and together we can make a real difference in the world..</p>
+      </div>
     </div>
-    <script src="script.js"></script>
+    <div class="image-card">
+      <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg" alt="Image 2">
+      <div class="image-info">
+        <h3>Our Mission</h3>
+        <p>To empower health care providers with innovative and easy-to-use platforms that transform patient outcomes and revolutionize the industry. Join us in our mission to shape the future of health care and bring about positive change. Together, we can create a world where health care is accessible, personalized, and effective.</p>
+      </div>
+    </div>
+  </div>
+</section>
+  
+ <section id="features">
+  <h2>We Help Medical Facilities to Go Digital</h2>
+  <div class="image-container">
+    <div class="image-card" onclick="navigateToSection('clinics')">
+      <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg" alt="Clinic Image">
+      <div class="our services for clinics">Clinics</div>
+    </div>
+    <div class="image-card" onclick="navigateToSection('pharmacies')">
+      <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg" alt="Pharmacy Image">
+      <div class="image-title">Pharmacies</div>
+    </div>
+  </div>
+</section>
+
+<section id="clinics">
+  <h2>Clinics</h2>
+  <div class="clinic-container">
+    <!-- Add clinic images with titles and info here -->
+  </div>
+</section>
+
+<section id="pharmacies">
+  <h2>Pharmacies</h2>
+  <div class="pharmacy-container">
+    <!-- Add pharmacy images with titles and info here -->
+  </div>
+</section>
+
+
+    <section id="Contact Us">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <img src="user-1-avatar.jpg" alt="User 1 Avatar">
+        <blockquote>"This health tech startup transformed how I approach my well-being. Highly recommended!"</blockquote>
+        <cite>- John Doe</cite>
+      </div>
+      <div class="testimonial">
+        <img src="user-2-avatar.jpg" alt="User 2 Avatar">
+        <blockquote>"I've seen incredible improvements in my health thanks to this amazing platform."</blockquote>
+        <cite>- Jane Smith</cite>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us at info@healthtechstartup.com</p>
+    <ul>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#terms">Terms of Service</a></li>
+    </ul>
+  </footer>
 </body>
 </html>
