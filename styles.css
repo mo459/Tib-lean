@@ -1,255 +1,127 @@
 body {
-  font-family: 'Playfair Display', serif;
-  line-height: 1.6;
   margin: 0;
   padding: 0;
-  color: #444; /* Use a dark shade for the text color */
-  background-color: #F2F9FF; /* Use a light shade of the main theme color for the background */
+  font-family: Arial, sans-serif;
+  background-color: #F2F9FF;
 }
 
-/* Update the main theme color */
-:root {
-  --main-color: #BBE3F9;
-}
-
-header {
-  background-color: rgba(255, 255, 255, 0.7); /* Use a glassy transparent background */
-  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header {
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  z-index: 999; /* Ensure the header stays on top of other elements */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the header */
-}
-
-/* Update the header typography to be more modern */
-header a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-nav {
+  width: 100%;
+  height: 90px; /* Set your desired header height here */
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  z-index: 999;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 1rem;
+  justify-content: space-between;
 }
 
-/* Add styles for the company logo */
-.logo {
-  max-width: 150px;
-  height: auto;
-  background-color: transparent;
+.logo-container {
+  flex: 0 0 auto;
+  max-width: 100px;
   padding: 8px;
-  border-radius: 0%;
-  margin-right: auto; /* Push the logo to the far left */
 }
 
-nav ul {
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 90px; /* Set your desired max height for the logo */
+  animation: spinLogo 2s linear infinite;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #F2F9FF; /* Change this to the desired page color */
+  color: #007BFF; /* Set the text color of the button */
+  border-radius: 50px; /* Make the button round */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Add a glow effect */
+}
+
+/* Add a hover effect for the CTA button */
+.cta-button:hover {
+  background-color: #007BFF;
+  color: #F2F9FF;
+}
+
+.nav-links {
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
-nav li {
-  margin-left: 1.5rem;
+.nav-links li {
+  margin: 0 15px;
 }
 
-nav a {
+.nav-links a {
+  color: #fff;
   text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 1.2rem;
 }
 
-/* Update the button color to a dark shade of the main theme color */
-.btn {
-  background-color: #2374a8; /* You can adjust the shade as needed */
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 50px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
-  text-decoration: none; /* Remove the underline from the button */
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Add a subtle shadow to the button */
-}
-
-/* Hover effect for buttons */
-.btn:hover {
-  background-color: #1b5d80; /* You can adjust the hover shade as needed */
-}
-
-main {
-  padding: 6rem 2rem 2rem; /* Adjust padding to make room for the fixed header */
-}
-
-#hero {
-  background-image: url('https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg');
-  background-size: cover;
-  text-align: left;
-  color: #fff;
-  padding: 5rem 0;
-}
-
-#hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-#about {
-  position: relative;
-  text-align: center;
-  padding: 4rem 0;
-  background-image: url('background-image.jpg'); /* Replace with the path to your background image */
-  background-size: cover;
-  background-position: center;
-}
-
-#about:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.7); /* Use transparent white for the glassy effect */
-  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-}
-
-#about h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: var(--main-color); /* Use the main theme color for the heading */
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-card {
-  position: relative;
-  margin: 1rem;
-  overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.image-card img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
-.image-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.8); /* Use a semi-transparent black background for image info */
-  color: #fff;
-  opacity: 0.9; /* Make the image info semi-transparent by default */
-  transition: opacity 0.3s;
-}
-
-.image-card:hover {
-  transform: scale(1.05); /* Add a subtle zoom-in effect on hover */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.image-info h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.image-info p {
-  font-size: 1rem;
-}
-
-/* Add animation to reveal the section when scrolling to it */
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
   }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
+
+  .cta-button {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header {
+    padding-top: 60px;
   }
 }
 
-#about {
-  animation: fadeInUp 1s ease; /* Apply the animation to the section */
+/* Align logo to the left and other items to the right */
+.navbar {
+  width: 100%;
 }
 
-.image-card .image-info {
-  animation: fadeInUp 1s ease; /* Apply the animation to the image info */
-  color: #ffff;
-}
-
-#features {
+.navbar-collapse {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
-.feature {
-  flex-basis: 30%;
-  padding: 1rem;
+.nav-item {
+  margin-left: 15px;
 }
 
-.feature img {
+.home-section {
+  padding: 100px 0;
+}
+
+.img-fluid {
   max-width: 100%;
+  height: auto;
 }
+ 
 
-#testimonials {
-  text-align: center;
-  padding: 3rem 0;
-}
-
-.testimonial {
-  max-width: 500px;
-  margin: 0 auto 2rem;
-  padding: 1rem;
-}
-
-.testimonial img {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-
-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
+/* Media Query for Responsive Design */
+@media screen and (max-width: 767px) {
+  /* Adjust styles for mobile view if needed */
 }
