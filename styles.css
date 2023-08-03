@@ -129,33 +129,13 @@ body {
     align-items: center;
   }
 
-  .navbar {
-    order: 2;
-    margin-bottom: 10px;
-  }
-
-  .navbar-brand {
-    order: 2;
-  }
-
-  .navbar-toggler {
-    order: 1;
-    margin-bottom: 10px;
-  }
-
   .nav-links {
-    order: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
-    display: none;
-  }
-
-  .nav-links.menu-open {
-    display: flex;
   }
 
   .nav-links li {
@@ -172,11 +152,6 @@ body {
   }
 
   .cta-button {
-    order: 4;
     display: block;
-  }
-
-  .navbar-collapse {
-    order: 5;
   }
 }
