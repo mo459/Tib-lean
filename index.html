@@ -1,102 +1,154 @@
-ices<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tib-Lean</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Semi-Transparent Glassy Header</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <header>
-    <!-- Add the company logo and adjust its styles -->
-    <img src="https://firebasestorage.googleapis.com/v0/b/newproject-caf18.appspot.com/o/users%2F1p5M5AVsHbfh97OSTsJWBIsF0PZ2%2Fuploads%2F%D8%B7%D9%80%D9%90%D8%A8%D9%92%20-%20%D9%84%D9%90%D9%80%D9%80%D9%8A%D9%80%D9%86%20(1)%20(1).png?alt=media&token=8989df68-9767-4794-98bf-ee1b926092b7" alt="Company Logo" class="logo">
-    <nav>
-      <ul>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li><a href="#Contact Us">Contact Us</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="header bg-transparent">
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.ibb.co/PD4Pj5Y/20230731-085346.png" alt="Aumet Logo" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto nav-links">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-section">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services-section">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-primary ml-md-3 rounded-pill glow-effect" href="#">Free Demo</a>
+    </div>
+  </nav>
+</header>
 
-  <main>
-    <section id="hero">
-      <h2>Discover The Future Of Health Care With Tib-Lean.</h2>
-      <p>Ready to improve patient outcomes and lower treatment costs? Schedule a demo now to see how TiB-Lean's innovative semi-telemedicine solutions can help. Book your demo today and join the future of healthcare!</p>
-      <a href="#signup" class="btn">Free Demo</a>
-    </section>
 
-    <section id="about">
-  <h2>About Us</h2>
-  <div class="image-container">
-    <div class="image-card">
-      <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg" alt="Image 1">
-      <div class="image-info">
-        <h3>Our Vision</h3>
-        <p>To provide affordable and accessible medical care services to all, regardless of socioeconomic status. By promoting better health outcomes for individuals and communities, we strive to create a healthier and happier world. Join us in our vision to make medical care accessible for everyone, and together we can make a real difference in the world..</p>
+  <section id="home-section" class="home-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="https://aumet.com/wp-content/uploads/2022/05/MarketPlace-1.webp" alt="Aumet Marketplace" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <div class="text-wrapper">
+            <h1 class="animated-text">Get the help you need and go digital</h1>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus euismod mauris, nec fermentum lorem lacinia eget.</p>
+            <a class="cta-button btn btn-primary" href="#">Get Started</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="image-card">
-      <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg" alt="Image 2">
-      <div class="image-info">
-        <h3>Our Mission</h3>
-        <p>To empower health care providers with innovative and easy-to-use platforms that transform patient outcomes and revolutionize the industry. Join us in our mission to shape the future of health care and bring about positive change. Together, we can create a world where health care is accessible, personalized, and effective.</p>
+  </section>
+
+  <!-- Rest of the content goes here -->
+  </section>
+
+  <section id="about-section" class="about-section">
+    <div class="container text-center">
+<h2>About Us</h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <h3 class="mb-4">Our Mission</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu turpis vel libero volutpat pellentesque.</p>
+           <img src="https://cdn.myportfolio.com/cfd188fc31dd341f9d59c20f2650f8b3/54870d32-6fa8-4aad-a6ff-76d2a7945b9f_rw_1200.jpg?h=6c70d0ca0c9236bd3ea82ea3c401c427 " alt="Hospital Services" class="img-fluid services-icon mb-3">
+        </div>
+        <div class="col-md-6 mx-auto">
+          <h3 class="mb-4">Our Vision</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer bibendum, turpis eget faucibus auctor, ex nibh malesuada metus, vel laoreet magna lacus id risus.</p>
+           <img src="https://cdn.myportfolio.com/cfd188fc31dd341f9d59c20f2650f8b3/54870d32-6fa8-4aad-a6ff-76d2a7945b9f_rw_1200.jpg?h=6c70d0ca0c9236bd3ea82ea3c401c427 " alt="Hospital Services" class="img-fluid services-icon mb-3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services-section" class="services-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="hospital-icon.png" alt="Hospital Services" class="img-fluid services-icon mb-3">
+        <h4>Hospitals</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt urna sed turpis tincidunt sodales.</p>
+        <a href="#hospital-details" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="pharmacy-icon.png" alt="Pharmacy Services" class="img-fluid services-icon mb-3">
+        <h4>Pharmacies</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt urna sed turpis tincidunt sodales.</p>
+        <a href="#pharmacy-details" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="col-md-4 text-center">
+        <img src="pharma-icon.png" alt="Pharmaceutical Companies Services" class="img-fluid services-icon mb-3">
+        <h4>Pharmaceutical Companies</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt urna sed turpis tincidunt sodales.</p>
+        <a href="#pharma-company-details" class="btn btn-primary">Learn More</a>
       </div>
     </div>
   </div>
 </section>
+
+<section id="pharmacy-details" class="details-section">
+  <div class="container">
+    <h3>Pharmacies</h3>
+     <img src="https://cdn.myportfolio.com/cfd188fc31dd341f9d59c20f2650f8b3/54870d32-6fa8-4aad-a6ff-76d2a7945b9f_rw_1200.jpg?h=6c70d0ca0c9236bd3ea82ea3c401c427 " alt="Hospital Services" class="img-fluid services-icon mb-3">
+    <p>Detailed information about our services for pharmacies goes here.</p>
+    <!-- Additional content for pharmacies -->
+  </div>
+</section>
+
+<section id="pharma-company-details" class="details-section">
+  <div class="container">
+    
+    <h2 class="text-center mb-4">Pharmaceutical Companies </h2>
   
- <section id="Services">
-   <h2>Our Services</h2>
-  <h2>We Help Medical Facilities to Go Digital</h2>
-  <div class="image-container">
-     <li><a href="#For Clinics">clinics</a></li>
-      <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg" alt="Clinic Image">
-    </div>
-    <div class="image-card" onclick="navigateToSection('pharmacies')">
-      <img src="https://d2jx2rerrg6sh3.cloudfront.net/image-handler/ts/20220524034237/ri/750/src/images/Article_Images/ImageForArticle_22572_16533781526443229.jpg" alt="Pharmacy Image">
-      <div class="image-title">Pharmacies</div>
-    </div>
+      <div class="col-md-4 text align-items-center">
+        <img src="https://cdn.myportfolio.com/cfd188fc31dd341f9d59c20f2650f8b3/54870d32-6fa8-4aad-a6ff-76d2a7945b9f_rw_1200.jpg?h=6c70d0ca0c9236bd3ea82ea3c401c427 " alt="Hospital Services" class="img-fluid services-icon mb-3">
+    <p>Detailed information about our services for pharmaceutical companies goes here.</p>
+    <!-- Additional content for pharmaceutical companies -->
   </div>
 </section>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('#main-nav .nav-link');
 
-<section id="clinics">
-  <h2>Clinics</h2>
-  <div class="clinic-container">
-    <!-- Add clinic images with titles and info here -->
-  </div>
-</section>
+    function updateActiveLink() {
+      const sections = document.querySelectorAll('section');
+      let currentSection = null;
 
-<section id="pharmacies">
-  <h2>Pharmacies</h2>
-  <div class="pharmacy-container">
-    <!-- Add pharmacy images with titles and info here -->
-  </div>
-</section>
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 0 && rect.bottom > 0) {
+          currentSection = section.id;
+        }
+      });
 
+      navLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${currentSection}`);
+      });
+    }
 
-    <section id="Contact Us">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-        <img src="user-1-avatar.jpg" alt="User 1 Avatar">
-        <blockquote>"This health tech startup transformed how I approach my well-being. Highly recommended!"</blockquote>
-        <cite>- John Doe</cite>
-      </div>
-      <div class="testimonial">
-        <img src="user-2-avatar.jpg" alt="User 2 Avatar">
-        <blockquote>"I've seen incredible improvements in my health thanks to this amazing platform."</blockquote>
-        <cite>- Jane Smith</cite>
-      </div>
-    </section>
-  </main>
+    window.addEventListener('scroll', updateActiveLink);
+  });
+</script>
 
-  <footer>
-    <p>Contact us at info@healthtechstartup.com</p>
-    <ul>
-      <li><a href="#privacy">Privacy Policy</a></li>
-      <li><a href="#terms">Terms of Service</a></li>
-    </ul>
-  </footer>
-</body>
+ </body>
 </html>
+
