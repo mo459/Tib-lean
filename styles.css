@@ -1,3 +1,4 @@
+/* Base styles for mobile devices */
 body {
   margin: 0;
   padding: 0;
@@ -6,15 +7,15 @@ body {
 }
 
 .header {
-  position: fixed; /* Make the header stay on top */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
   padding: 20px;
-  z-index: 999; /* Ensure the header stays on top of other elements */
-  }
+  z-index: 999;
+}
 
 .navbar {
   display: flex;
@@ -25,16 +26,16 @@ body {
 }
 
 .logo-container {
-  flex: 0 0 auto; /* Ensure the container doesn't grow or shrink */
-max-width: 100px; /* Set the maximum width for the container */
-  padding: 8px; /* Add padding around the logo */
+  flex: 0 0 auto;
+  max-width: 100px;
+  padding: 8px;
 }
 
 .logo-img {
-  max-width: 100%; /* Set the maximum width to 100% */
+  max-width: 100%;
   height: auto;
   max-height: 90px;
-  animation: spinLogo 2s linear infinite; /* Add animation to the logo */
+  animation: spinLogo 2s linear infinite;
 }
 
 .menu-icon {
@@ -49,6 +50,7 @@ max-width: 100px; /* Set the maximum width for the container */
   padding: 10px 20px;
   border-radius: 5px;
 }
+
 nav-links {
   list-style: none;
   display: flex;
@@ -65,33 +67,6 @@ nav-links {
   text-decoration: none;
 }
 
-/* Media Query for Responsive Design */
-@media screen and (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Show the menu icon on smaller screens */
-  }
-
-  .cta-button {
-    display: none; /* Show the CTA button on smaller screens */
-  }
-
-  .nav-links {
-    display: none; /* Hide the nav links on smaller screens */
-    flex-direction: column; /* Stack the nav links vertically */
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
-    width: 100%;
-  }
-
-  .navbar {
-    flex-direction: row; /* Stack elements horizontally */
-    justify-content: space-between; /* Move logo and CTA to the sides */
-  }
-
-
 .home-section {
   padding-top: 200px;
 }
@@ -100,11 +75,12 @@ nav-links {
   max-width: 100%;
   height: auto;
 }
+
 /* Text animation styles */
 .animated-text {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 0.15em solid #000; /* Border will look like text is being written */
+  border-right: 0.15em solid #000;
   animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
   font-size: 20px;
 }
@@ -129,8 +105,27 @@ nav-links {
     border-color: #000;
   }
 }
+/* Additional styles for desktop devices */
+@media screen and (min-width: 768px) {
+  /* Adjust styles for desktop view */
 
-/* Media Query for Responsive Design */
-@media screen and (max-width: 767px) {
-  /* Adjust styles for mobile view if needed */
+  .menu-icon {
+    display: none; /* Hide the menu icon on larger screens */
+  }
+
+  .cta-button {
+    display: block; /* Show the CTA button on larger screens */
+  }
+
+  .nav-links {
+    display: flex; /* Show the nav links on larger screens */
+    flex-direction: row; /* Align nav links horizontally */
+    background-color: transparent; /* Remove background color for larger screens */
+    padding: 0; /* Remove padding for larger screens */
+  }
+
+  .navbar {
+    flex-direction: row; /* Stack elements horizontally */
+    justify-content: space-between; /* Move logo and CTA to the sides */
+  }
 }
