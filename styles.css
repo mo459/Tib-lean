@@ -1,35 +1,40 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
   background-color: white;
 }
 
 .header {
-  position: fixed;
+  position: fixed; /* Make the header stay on top */
   top: 0;
   left: 0;
   width: 100%;
-  height: 90px;
-  background-color: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  backdrop-filter: blur(10px);
   padding: 20px;
-  z-index: 999;
+  z-index: 999; /* Ensure the header stays on top of other elements */
+  }
+
+.navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .logo-container {
-  flex: 0 0 auto;
-  max-width: 100px;
-  padding: 8px;
+  flex: 0 0 auto; /* Ensure the container doesn't grow or shrink */
+max-width: 100px; /* Set the maximum width for the container */
+  padding: 8px; /* Add padding around the logo */
 }
 
 .logo-img {
-  max-width: 100%;
+  max-width: 100%; /* Set the maximum width to 100% */
   height: auto;
-  max-height: 90px; /* Set your desired max height for the logo */
-  animation: spinLogo 2s linear infinite;
+  max-height: 90px;
+  animation: spinLogo 2s linear infinite; /* Add animation to the logo */
 }
 
 .menu-icon {
@@ -37,20 +42,14 @@ body {
   cursor: pointer;
 }
 
-.btn {
-  background-color: #F2F9FF; /* Change this to the desired page color */
-  color: #007BFF; /* Set the text color of the button */
-  border-radius: 50px; /* Make the button round */
-  box-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Add a glow effect */
-}
-
-/* Add a hover effect for the CTA button */
-.cta-button:hover {
+.cta-button {
+  color: #fff;
+  text-decoration: none;
   background-color: #007BFF;
-  color: #F2F9FF;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
-
-.nav-links {
+nav-links {
   list-style: none;
   display: flex;
   margin: 0;
@@ -69,88 +68,69 @@ body {
 /* Media Query for Responsive Design */
 @media screen and (max-width: 768px) {
   .menu-icon {
-    display: block;
+    display: block; /* Show the menu icon on smaller screens */
   }
 
   .cta-button {
-    display: block;
+    display: none; /* Show the CTA button on smaller screens */
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
+    display: none; /* Hide the nav links on smaller screens */
+    flex-direction: column; /* Stack the nav links vertically */
     position: absolute;
     top: 100%;
     left: 0;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px;
+    width: 100%;
   }
 
   .navbar {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: row; /* Stack elements horizontally */
+    justify-content: space-between; /* Move logo and CTA to the sides */
   }
 
-  .header {
-    padding-top: 60px;
-  }
-}
-
-/* Align logo to the left and other items to the right */
-.navbar {
-  width: 100%;
-}
-
-.navbar-collapse {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-item {
-  margin-left: 15px;
-}
 
 .home-section {
-  padding: 100px 0;
+  padding-top: 200px;
 }
 
 .img-fluid {
   max-width: 100%;
   height: auto;
 }
- 
-/* Add this CSS for mobile view */
-@media screen and (max-width: 768px) {
-  .header {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-  }
+/* Text animation styles */
+.animated-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #000; /* Border will look like text is being written */
+  animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+  font-size: 20px;
+}
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-    padding: 10px;
-    width: 100%; 
+/* Keyframe animation for text typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
 
-  .nav-links li {
-    margin: 10px 0;
+/* Keyframe animation for caret blinking effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
+  50% {
+    border-color: #000;
+  }
+}
 
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .nav-active {
-    color: #007BFF;
-  }
-
-  .cta-button {
-    display: none;
-  }
+/* Media Query for Responsive Design */
+@media screen and (max-width: 767px) {
+  /* Adjust styles for mobile view if needed */
 }
