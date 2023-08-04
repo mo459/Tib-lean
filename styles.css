@@ -122,7 +122,6 @@ body {
 /* Add this CSS for mobile view */
 @media screen and (max-width: 768px) {
   .header {
-    padding-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -152,6 +151,6 @@ body {
   }
 
   .cta-button {
-    display: block;
+    display: none;
   }
 }
