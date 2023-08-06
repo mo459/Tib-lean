@@ -168,6 +168,7 @@ body {
     border-color: #000;
   }
 }
+
 /* Additional styles for desktop devices */
 @media screen and (min-width: 768px) {
   /* Adjust styles for desktop view */
