@@ -38,7 +38,23 @@
     <a class="btn btn-primary ml-md-3 rounded-pill glow-effect" href="#">Free Demo</a>
   </nav>
 </header>
-
+  
+<div class="mobile-menu">
+  <button class="menu-icon" onclick="toggleMenu()">
+    <span class="menu-icon__bar"></span>
+    <span class="menu-icon__bar"></span>
+    <span class="menu-icon__bar"></span>
+  </button>
+  <div class="overlay-menu">
+    <ul class="menu-items">
+      <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about-section" onclick="toggleMenu()">About</a></li>
+      <li><a href="#services-section" onclick="toggleMenu()">Services</a></li>
+      <li><a href="#contact-section" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+    <button class="close-btn" onclick="toggleMenu()">✕</button>
+  </div>
+</div>
 
   <section id="home-section" class="home-section">
     <div class="container">
