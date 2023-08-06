@@ -51,7 +51,7 @@ body {
   border-radius: 5px;
 }
 
-nav-links {
+.nav-links {
   list-style: none;
   display: flex;
   margin: 0;
