@@ -11,42 +11,39 @@
 <body>
 <header class="header bg-transparent">
   <nav class="navbar navbar-expand-md navbar-light bg-transparent">
-    </button>
-  <a class="navbar-brand" href="#">
-    <div class="mobile-menu">
-  <button class="menu-icon" onclick="toggleMenu()">
-    <span class="menu-icon__bar"></span>
-    <span class="menu-icon__bar"></span>
-    <span class="menu-icon__bar"></span>
-  </button>
-  <div class="overlay-menu">
-    <ul class="menu-items">
-      <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
-      <li><a href="#about-section" onclick="toggleMenu()">About</a></li>
-      <li><a href="#services-section" onclick="toggleMenu()">Services</a></li>
-      <li><a href="#contact-section" onclick="toggleMenu()">Contact</a></li>
-    </ul>
-    <button class="close-btn" onclick="toggleMenu()">✕</button>
-  </div>
-</div>
-        <img src="https://i.ibb.co/PD4Pj5Y/20230731-085346.png" alt="tiblean Logo" class="logo-img">
-      </a>
-        <ul class="navbar-nav ml-auto nav-links">
-          <li class="nav-item active">
-            <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-section">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services-section">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact-section">Contact</a>
-          </li>
-        </ul>
+    <a class="navbar-brand" href="#">
+      <div class="mobile-menu">
+        <button class="menu-icon" onclick="toggleMenu()">
+          <span class="menu-icon__bar"></span>
+          <span class="menu-icon__bar"></span>
+          <span class="menu-icon__bar"></span>
+        </button>
+        <div class="overlay-menu">
+          <ul class="menu-items">
+            <li><a href="#home-section" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about-section" onclick="toggleMenu()">About</a></li>
+            <li><a href="#services-section" onclick="toggleMenu()">Services</a></li>
+            <li><a href="#contact-section" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+          <button class="close-btn" onclick="toggleMenu()">✕</button>
+        </div>
       </div>
-    </div>
+      <img src="https://i.ibb.co/PD4Pj5Y/20230731-085346.png" alt="tiblean Logo" class="logo-img">
+    </a>
+    <ul class="navbar-nav ml-auto nav-links">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-section">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services-section">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-section">Contact</a>
+      </li>
+    </ul>
     <a class="btn btn-primary ml-md-3 rounded-pill glow-effect" href="#">Free Demo</a>
   </nav>
 </header>
@@ -137,15 +134,15 @@
   </div>
 </section>
   <script>
-  function toggleMenu() {
-    const menu = document.querySelector('.overlay-menu');
-    menu.classList.toggle('menu-open');
-    
+ 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
-
+  function toggleMenu() {
+    const menu = document.querySelector('.overlay-menu');
+    menu.classList.toggle('menu-open');
+  }
 </script>
 
 </body>
