@@ -13,6 +13,7 @@ body {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
+  align-items: center;
   padding: 20px;
   z-index: 999;
 }
@@ -170,19 +171,19 @@ body {
 }
 
 /* Additional styles for desktop devices */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   /* Adjust styles for desktop view */
 
   .menu-icon {
-    display: none; /* Hide the menu icon on larger screens */
+    display: block; /* Hide the menu icon on larger screens */
   }
 
   .cta-button {
-    display: block; /* Show the CTA button on larger screens */
+    display: none; /* Show the CTA button on larger screens */
   }
 
   .nav-links {
-    display: flex; /* Show the nav links on larger screens */
+    display: none; /* Show the nav links on larger screens */
     flex-direction: row; /* Align nav links horizontally */
     background-color: transparent; /* Remove background color for larger screens */
     padding: 0; /* Remove padding for larger screens */
