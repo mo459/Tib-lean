@@ -11,107 +11,113 @@
 
 </head>
 <body style="font-family: Playfair Display, serif; margin:2.5px ;">
-<header class="bg-transparent" style="position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); display: flex; justify-content: space-between; align-items: center; padding: 20px; z-index: 999; height: 10%; margin-bottom: 100px;">
-  <div style="display: flex; align-items: center;">
-    <img src="https://i.ibb.co/5hcNqXW/20230810-065654-1.png" alt="tiblean Logo" class="logo-img" style="height: auto; max-height: 50px; margin-left: 10px;">
-    <a class="btn btn-outline-primary rounded-pill glow-effect ml-3" href="#contact-section" style="font-weight: 600; box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);" href="#">Free Demo</a>
-  </div>
-  <nav class="navbar navbar-expand-md navbar-light bg-transparent">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light" style="position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); align-items: center; padding: 20px; z-index: 999; height: 80px; margin-bottom: 100px;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://i.ibb.co/5hcNqXW/20230810-065654-1.png" alt="Tib-Lean Logo" height="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto" style="align-items: center;">
+    <div class="collapse navbar-collapse" id="navbarNav" style="text-align: center;">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#home-section">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#home" style="background-color: white;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./about.html">About</a>
+          <a class="nav-link" href="#about" style="background-color: white;">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#services-section">Services</a>
+          <a class="nav-link" href="#services" style="background-color: white;">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact-section">Contact</a>
+          <a class="nav-link" href="#contact" style="background-color: white;">Contact</a>
         </li>
       </ul>
     </div>
-  </nav>
-</header>
-  <section id="home-section" class="home-section" style="margin-top: 110px;">
-    <div class="container">
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="py-5 text-center" style="margin-top: 100px;">
+      <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-6">
-        <img src="https://i.ibb.co/RNsNbjT/5.png" alt="home Image" class="img-fluid">
-        </div>
+        
         <div class="col-md-6" style="margin-top: 20px;">
           
             <h3 style="font-weight: 600; font-style: italic; color:#034172 ;"> Revolutionizing Healthcare Business One Click at a Time.</h1>
             
             <p>Empower Your Healthcare Business with Apps, WhatsApp Chatbot, and AI for a Seamless Digital Transformation. Explore Tib-lean's Innovative Services and Schedule your Demo Now!</p>
-            <div class=" row " style="justify-content:end ;">
+           
             <a class="btn btn-outline-primary rounded-pill glow-effect" href="#contact-section" style="font-weight: 600;  box-shadow: 0 0 10px  rgb(0, 0, 255); /* Adjust the color and size as needed */
-  transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition */
+  transition: box-shadow 0.3s ease-in-out; margin: 10px;/* Add a smooth transition */
 ">Schedule Demo</a>
 </div>
-          </div>
-        </div>
+<div class="col-lg-6">
+        <img src="https://i.ibb.co/RNsNbjT/5.png" alt="Healthcare Image" class="img-fluid">
       </div>
     </div>
-    
-    <h2 style="text-align:center; font-weight: 900; font-style: italic; color: #034172 ;margin:20px ;margin-top:100px;">Services</h2> 
-
-  </section>
-
-  
-
-      
-
-
-<section id="services-section" class="services-section" style="background-color:#ffffff; margin: 5px; margin-top:100px;">
-  <div class="container" style="margin-top: 10px;">
-     <div class="row justify-content-center" style="align-items:center;">
-      <div class="col-md-4 text-center">
-        <img src="https://i.ibb.co/t8fB77F/tibicon.png" alt="Hospital Services" class="img-fluid services-icon mb-3" style="width: 50%;">
-        <h4>Hospitals and Clinics</h4>
-        <p>Transform Your Healthcare Operations with Our Expertise</p>
-        <ul class="dots">
+  </div>
+</section>
+<!-- Services Section -->
+<section id="services" class="bg-light py-5">
+  <div class="container text-center">
+    <h2 class="display-4">Our Services</h2>
+    <p class="lead">Explore our innovative solutions for healthcare providers.</p>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.ibb.co/t8fB77F/tibicon.png" class="card-img-top" alt="Service 1">
+          <div class="card-body">
+            <h5 class="card-title">Hospitals and Clinics</h5>
+            <p class="card-text">Transform Your Healthcare Operations with Our Expertise</p>
+            <ul class="dots">
             <li>Streamlined Appointment Booking via WhatsApp Chatbot.</li>
             <li>Seamless Electronic Health Records (EHRs) Management.</li>
             <li>Virtual Consultations and Remote Monitoring.</li>
             <!-- Add more benefits as needed -->
           </ul>
-        <a href="#hospital-section" class=" btn btn-outline-primary rounded-pill glow-effect" href="#contact-section" style="font-weight: 600;  box-shadow: 0 0 10px  rgb(0, 0, 255); margin: 10px;">Learn More</a>
+            <a href="#hospital-details" class=" btn btn-outline-primary rounded-pill glow-effect" href="#contact-section" style="font-weight: 600;  box-shadow: 0 0 10px  rgb(0, 0, 255); margin: 10px;">Learn More</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 text-center" >
-        <img src="https://i.ibb.co/V26gzcF/pharmalean.png" alt="Pharmacy Services" class="img-fluid services-icon mb-3" style="width: 50%;">
-        <h4>Pharmacies</h4>
-        <p>Elevate Your Pharmacy Operations with Our Expertise </p>
-        <ul class="dots">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.ibb.co/V26gzcF/pharmalean.png" class="card-img-top" alt="Service 2">
+          <div class="card-body">
+            <h5 class="card-title">Pharmacies</h5>
+            <p class="card-text">Elevate Your Pharmacy Operations with Our Expertise</p>
+            <ul class="dots">
             <li>Receive Online Orders Effortlessly via Our Platform and WhatsApp Chatbot.</li>
             <li>Establish Your Own Online Drug Store Seamlessly.</li>
             <li>Streamlined Order Processing and Inventory Management.</li>
             <!-- Add more benefits as needed -->
         </ul>
-        <a href="#pharmacy-details" class=" btn btn-outline-primary rounded-pill glow-effect" href="#contact-section" style="font-weight: 600;  box-shadow: 0 0 10px  rgb(0, 0, 255); margin: 10px;">Learn More</a>
+            <a href="#pharmacy-details" class="btn btn-outline-primary rounded-pill glow-effect" href="#contact-section" style="font-weight: 600;  box-shadow: 0 0 10px  rgb(0, 0, 255); margin: 10px;">Learn More</a>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4 text-center">
-        <img src="https://i.ibb.co/c6GvDmS/pharmastream.png" alt="Pharmaceutical Companies Services"  class="img-fluid services-icon mb-3" style="width: 50%;">
-        <h4>Pharmaceutical Companies</h4>
-        <p> Revolutionize Your Distribution and Engagement Strategies</p>
-        <ul class="dots">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://i.ibb.co/c6GvDmS/pharmastream.png" class="card-img-top" alt="Service 3">
+          <div class="card-body">
+            <h5 class="card-title">Pharmaceutical Companies</h5>
+            <p class="card-text">Revolutionize Your Distribution and Engagement Strategies</p>
+            <ul class="dots">
             <li>Digitalize Distribution and Reduce Reliance on Reps.</li>
             <li>Connect Directly with Pharmacies for Efficient Supply.</li>
             <li>Enhanced Data-Driven Insights for Better Decision-Making.</li>
             <!-- Add more benefits as needed -->
         </ul>
-        <a href="#pharma-company-details" class=" btn btn-outline-primary rounded-pill glow-effect" href="#contact-section" style="font-weight: 600;  box-shadow: 0 0 10px  rgb(0, 0, 255); margin: 10px;">Learn More</a>
+            <a href="#pharma-company-details" class="btn btn-outline-primary rounded-pill glow-effect" href="#contact-section" style="font-weight: 600;  box-shadow: 0 0 10px  rgb(0, 0, 255); margin: 10px;">Learn More</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-</div>
 <section id="hospital-section" class="hospital-section py-5" style="margin-top: 100px;">
     <h2 class="text-center" style="font-weight: 900;">Hospitals and Clinics</h2>
     <p class="text-center">We offer comprehensive digital solutions for healthcare providers: appointment booking, EHRs, telemedicine, data-driven insights, and continuous innovation.</p>
@@ -273,6 +279,7 @@
     </div>
   </div>
 </section>
+
 
 
  <footer class="footer text-center py-4">
