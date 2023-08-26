@@ -9,96 +9,145 @@
    <!-- Include your custom stylesheets here -->
 </head>
 
-<body style="font-family: Playfair Display, serif; margin: 2.5px; padding: 0;">
+<style>
+      /* Add your custom styles here */
+      body {
+         font-family: 'Playfair Display', serif;
+         margin: 0;
+         padding: 0;
+         background-color: #fff;
+      }
+      .navbar {
+         background-color: rgba(255, 255, 255, 0.7);
+         backdrop-filter: blur(10px);
+         height: 80px;
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         background-color: rgba(255, 255, 255, 0.7);
+         backdrop-filter: blur(10px);
+         align-items: center;
+         padding: 20px;
+         z-index: 999;
+      }
+      .navbar-brand img {
+         height: 50px;
+      }
+      .navbar-nav .nav-item {
+         margin-right: 15px;
+      }
+      .about-section {
+         margin-top: 100px;
+         padding: 50px 0;
+      }
+      .section-heading {
+         font-weight: 900;
+         font-style: italic;
+         color: rgb(17, 0, 46);
+         margin: 0;
+         padding: 20px 0;
+      }
+      .about-content {
+         margin-bottom: 50px;
+         text-align: center;
+      }
+      .about-content p {
+         font-size: 18px;
+         line-height: 1.6;
+         color: #333;
+      }
+      .about-content img {
+         max-width: 100%;
+         margin: 20px auto;
+         display: block;
+         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+      .contact-section {
+         background-color: #fff;
+         padding: 50px 0;
+      }
+      .footer {
+         background-color: #333;
+         color: #fff;
+         padding: 15px 0;
+      }
+   </style>
+</head>
 
-   <nav class="navbar navbar-expand-md navbar-light" style="position: fixed; top: 0; left: 0; width: 100%; background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); align-items: center; padding: 20px; z-index: 999; height: 80px; margin-bottom: 100px;">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="https://i.ibb.co/5hcNqXW/20230810-065654-1.png" alt="Tib-Lean Logo" height="50">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav" style="text-align: center;">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html#home-section" style="background-color: white;"> Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#about-section" style="background-color: white;">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./index.html#services-section" style="background-color: white;">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact-section" style="background-color: white;">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<body>
 
-
-   <section id="about-section" class="about-section" style="margin-top: 110px;">
-      <!-- Paste the "About Us" content here -->
-      <section id="about-section" class="about-section" style="margin-top:20px ;">
-        <div class="container" style="background-color:azure ; width: fit-content;">
-          <h1 style="text-align:left;    font-weight: 900; font-style: italic; color: rgb(17, 0, 46); ">About Us</h2> 
+   <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+         <a class="navbar-brand" href="#">
+            <img src="https://i.ibb.co/5hcNqXW/20230810-065654-1.png" alt="Tib-Lean Logo">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav" style="text-align: center;">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="./index.html#home-section" style="background-color: white;">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#about-section" style="background-color: white;">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="./index.html#services-section" style="background-color: white;">Services</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#contact-section" style="background-color: white;">Contact</a>
+               </li>
+            </ul>
+         </div>
       </div>
-      <h3 style="text-align:center; font-weight: 900; color: rgb(17, 0, 46); margin-top: 50px; font-style: italic; margin-bottom: 50px;"> Our Mission</h3>
-          
-          <div class="row justify-content-center" style="align-items:center;"> 
-          <div class="col-md-6">
-          <p>Transforming the healthcare industry through the seamless digitalization of day-to-day operations for healthcare businesses with Apps, WhatsApp ChatBots, and Artificial Intelligence.</p>
-        
-        </div>
-      
-             <img src="https://laruche.health/assets/imgs/globally-solutions.png" style=" width: 500px;"> 
-            </div>
-          <div class="row justify-content-center" style="align-items:center;">
+   </nav>
+
+   <section id="about-section" class="about-section">
+      <div class="container">
+      <h1 class="section-heading" style="text-align: center;">About Us</h1>
+      <h3 class="section-heading" style="text-align: center;">Our Mission</h3>
+         <div class="row justify-content-center about-content" style="align-items: center;">
             <div class="col-md-6">
-          <p>We are dedicated to providing healthcare businesses with the tools and solutions they need for effortless digitalization of their operations, resulting in enhanced efficiency, improved patient care, and data-driven decision-making. <p> 
+               <p>Transforming the healthcare industry through the seamless digitalization of day-to-day operations for healthcare businesses with Apps, WhatsApp ChatBots, and Artificial Intelligence.</p>
             </div>
-            <img src="https://cdn.myportfolio.com/cfd188fc31dd341f9d59c20f2650f8b3/54870d32-6fa8-4aad-a6ff-76d2a7945b9f_rw_1200.jpg?h=6c70d0ca0c9236bd3ea82ea3c401c427 " alt="Hospital Services" style=" max-width: 500px; margin: 20px;">
-          
-          
-          
-
-          <p style="margin: 50px; ">Our ultimate goal is to empower both patients and healthcare providers by harnessing the power of medical data, thus setting new standards for excellence in healthcare delivery.</p>
-          
-           
-        </div>
-        </div>
-        <hr style=" height: 1px; background-color: grey;  margin: 20px 0;">
-        <h3 style="text-align:center; font-weight: 900; color: rgb(17, 0, 46); margin-top: 50px; font-style: italic; margin-bottom: 50px;"> Our Vision</h3>
-          
-          <div class="row justify-content-center" style="align-items:center;"> 
-          <div class="col-md-6">
-          <p style="text-align:left ;">Revolutionizing healthcare through seamless digital integration, where technology and compassion intersect. Our transformative Apps, WhatsApp Automation, and AI envision a world where operations streamline, patient experiences elevate, and data empowers choices. Join our journey to redefine healthcare, where digitalization and empathy converge, creating a healthier and connected tomorrow.</p>
-        
-        </div>
-      
-             <img src="https://i.ibb.co/XtnQFhm/transfo.png" style=" max-width: 500px; margin: 50px;"> 
+            <div class="col-md-6">
+               <img src="https://i.ibb.co/cCddDvz/health.webp" alt="Healthcare Image">
             </div>
-            <div class="row justify-content-center" style="align-items:center;">
-          <div class="col-md-6">
-          <p>As we work towards this future, we remain committed to making affordable and accessible medical care available to all, transcending socioeconomic boundaries. By enhancing health outcomes for individuals and communities, we aspire to nurture a happier, healthier global community. Together, let's democratize medical care, creating a tangible impact that spans the world.</p>
-          
-           
-        </div>
-        <img src="https://i.ibb.co/cCddDvz/health.webp" alt="Hospital Services" style=" max-width: 500px;margin: 50px;">
-          
-        
-    </div>
+         </div>
+         <div class="row justify-content-center about-content" style="align-items: center;">
+            <div class="col-md-6">
+               <p>We are dedicated to providing healthcare businesses with the tools and solutions they need for effortless digitalization of their operations, resulting in enhanced efficiency, improved patient care, and data-driven decision-making.</p>
+            </div>
+            <div class="col-md-6">
+               <img src="https://cdn.myportfolio.com/cfd188fc31dd341f9d59c20f2650f8b3/54870d32-6fa8-4aad-a6ff-76d2a7945b9f_rw_1200.jpg?h=6c70d0ca0c9236bd3ea82ea3c401c427" alt="Hospital Services">
+            </div>
+         </div>
+         <hr>
+         <h3 class="section-heading" style="text-align: center;">Our Vision</h3>
+         <div class="row justify-content-center about-content" style="align-items: center;">
+            <div class="col-md-6">
+               <p>Revolutionizing healthcare through seamless digital integration, where technology and compassion intersect. Our transformative Apps, WhatsApp Automation, and AI envision a world where operations streamline, patient experiences elevate, and data empowers choices. Join our journey to redefine healthcare, where digitalization and empathy converge, creating a healthier and connected tomorrow.</p>
+            </div>
+            <div class="col-md-6">
+               <img src="https://laruche.health/assets/imgs/globally-solutions.png" alt="Healthcare Image">
+            </div>
+         </div>
+         <div class="row justify-content-center about-content" style="align-items: center;">
+            <div class="col-md-6">
+               <p>As we work towards this future, we remain committed to making affordable and accessible medical care available to all, transcending socioeconomic boundaries. By enhancing health outcomes for individuals and communities, we aspire to nurture a happier, healthier global community. Together, let's create a tangible impact that spans the world.</p>
+            </div>
+            <div class="col-md-6">
+               <img src="https://i.ibb.co/cCddDvz/health.webp" alt="Hospital Services">
+            </div>
+         </div>
+      </div>
    </section>
 
-
-
-   </section>
-<section id="contact-section" class="contact-section py-5">
-  <div class="container" style="background-color:azure ; width: fit-content;">
-    <h2 class="text-center mb-4" style=" font-weight: 900; font-style: italic; color: rgb(17, 0, 46); ">Contact Us</h2>
-  </div>
+   <section id="contact-section" class="contact-section py-5" style="margin-top: 100px;">
+  <div class="container">
+    <h2 class="text-center mb-4" style="font-weight: 600; color: #034172;">Contact Us</h2>
     <div class="row">
       <div class="col-md-6 mx-auto">
         <form action="#" method="post">
@@ -114,14 +163,19 @@
             <label for="message">Message:</label>
             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+        <div class=" row " style="justify-content:end ;">
+            <button type="submit"class="btn btn-outline-primary rounded-pill glow-effect" style="font-weight: 600;  box-shadow: 0 0 10px  rgb(0, 0, 255); /* Adjust the color and size as needed */
+  transition: box-shadow 0.3s ease-in-out; /* Add a smooth transition */
+">Submit</a>
+</div>  
         </form>
       </div>
     </div>
   </div>
 </section>
 
-   <footer class="footer text-center py-4">
+
+ <footer class="footer text-center py-4">
       <div class="container">
          <p>Terms & Conditions &copy; 2023 | All Rights Reserved</p>
       </div>
