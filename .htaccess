@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^tib-lean.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.tib-lean.com [NC]
+RewriteRule ^(.*)$ http://tiblean.com/$1 [L,R=301,NC]
